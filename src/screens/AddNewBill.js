@@ -1,14 +1,14 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
-const Screen3 = () => {
+const AddNewBill = () => {
   return (
-    <View style={{backgroundColor: '#009', flex: 1}}>
-      <Text>Screen3</Text>
+    <View>
+      <Text>AddNewBill</Text>
     </View>
   );
 };
 
-export default Screen3;
+export default AddNewBill;
 
 const styles = StyleSheet.create({});

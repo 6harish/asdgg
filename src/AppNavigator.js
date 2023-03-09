@@ -4,6 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 import Splash from './normal/Splash';
 import Parent from './normal/Parent';
+import AddNewBill from './screens/AddNewBill';
 
 const Stack = createStackNavigator();
 
@@ -11,15 +12,20 @@ const AppNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        {/* <Stack.Screen
+        <Stack.Screen
           name="Splash"
           component={Splash}
           options={{headerShown: false}}
-        /> */}
+        />
         <Stack.Screen
           name="Parent"
           component={Parent}
           options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="AddNewBill"
+          component={AddNewBill}
+          // options={{headerShown: false}}
         />
       </Stack.Navigator>
     </NavigationContainer>
